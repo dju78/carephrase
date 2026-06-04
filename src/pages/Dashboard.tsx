@@ -56,7 +56,7 @@ export default function Dashboard({ onNavigate }: Props) {
       <div className="mb-6">
         <h1 className="text-2xl font-bold text-slate-800">Welcome to CareTalk UK 👋</h1>
         <p className="text-slate-600 mt-2 leading-relaxed">
-          This app helps <strong>immigrant Healthcare Assistants, Support Workers, and Care Assistants</strong> communicate professionally in UK care settings — from writing care notes to speaking up in emergencies.
+          This app supports <strong>Healthcare Assistants, Support Workers, and Nursing Assistants</strong> in communicating professionally and confidently in UK care settings, from writing care notes to speaking up in emergencies.
         </p>
       </div>
 
