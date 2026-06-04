@@ -1,0 +1,20 @@
+<svg width="1100" height="360" viewBox="0 0 1100 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Daramola Digital Labs logo">
+  <rect width="1100" height="360" fill="white"/>
+  <g transform="translate(40,25) scale(0.55)">
+    <path d="M138 70 H286 C388 70 456 148 456 256 C456 364 388 442 286 442 H138 V378 H282 C348 378 392 328 392 256 C392 184 348 134 282 134 H138 Z" fill="#082554"/>
+    <path d="M206 150 H278 C334 150 374 192 374 256 C374 320 334 362 278 362 H206 Z" fill="white"/>
+    <path d="M116 112 C170 112 204 146 204 190 C204 216 190 238 166 252 L206 296 L150 376" fill="none" stroke="#082554" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M116 112 C170 112 204 146 204 190 C204 216 190 238 166 252 L206 296 L150 376" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="108" cy="112" r="30" fill="#16864C" stroke="white" stroke-width="8"/>
+    <circle cx="166" cy="252" r="30" fill="#C49A2C" stroke="white" stroke-width="8"/>
+    <circle cx="150" cy="376" r="30" fill="#082554" stroke="white" stroke-width="8"/>
+    <rect x="250" y="286" width="28" height="76" rx="6" fill="#16864C"/>
+    <rect x="294" y="236" width="28" height="126" rx="6" fill="#16864C"/>
+    <rect x="338" y="180" width="28" height="182" rx="6" fill="#16864C"/>
+  </g>
+  <text x="335" y="125" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="800" fill="#082554">DDL</text>
+  <text x="335" y="210" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="800" letter-spacing="4" fill="#082554">DARAMOLA DIGITAL LABS</text>
+  <line x1="335" y1="245" x2="835" y2="245" stroke="#C49A2C" stroke-width="5"/>
+  <circle cx="585" cy="245" r="11" fill="#C49A2C"/>
+  <text x="335" y="300" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="8" fill="#16864C">DATA • INNOVATION • IMPACT</text>
+</svg>
