@@ -23,15 +23,17 @@ export default function NavBar({ currentPage, onNavigate }: Props) {
           onClick={() => onNavigate('landing')}
           className="flex items-center gap-2 hover:opacity-90 transition-opacity"
         >
-          <img
-            src="/ddl-logo.png"
-            alt="DDL"
-            className="h-7 w-auto"
-            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
-          />
+          <div className="bg-white rounded-lg p-1 shadow-sm">
+            <img
+              src="/ddl-logo.png"
+              alt="DDL"
+              className="h-7 w-7 object-contain"
+              onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
+            />
+          </div>
           <div className="text-left">
             <span className="text-white font-bold text-base leading-none block">CareTalk UK</span>
-            <span className="text-blue-300 text-xs leading-none">by Daramola Digital Labs</span>
+            <span className="text-blue-200 text-xs leading-none">by Daramola Digital Labs</span>
           </div>
         </button>
         <div className="flex flex-wrap gap-1">

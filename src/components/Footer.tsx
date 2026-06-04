@@ -4,12 +4,14 @@ export default function Footer() {
       <div className="max-w-3xl mx-auto px-4 py-8">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-6">
           <div className="flex items-center gap-3">
-            <img
-              src="/ddl-logo.png"
-              alt="Daramola Digital Labs"
-              className="h-8 w-auto"
-              onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
-            />
+            <div className="bg-white rounded-lg p-1.5 shrink-0">
+              <img
+                src="/ddl-logo.png"
+                alt="Daramola Digital Labs"
+                className="h-8 w-8 object-contain"
+                onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
+              />
+            </div>
             <div>
               <p className="text-white font-semibold text-sm">CareTalk UK</p>
               <p className="text-slate-400 text-xs">by Daramola Digital Labs</p>

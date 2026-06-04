@@ -9,15 +9,17 @@ export default function LandingPage({ onGetStarted }: Props) {
       {/* Header */}
       <header className="px-4 py-5 flex items-center justify-between max-w-3xl mx-auto w-full">
         <div className="flex items-center gap-3">
-          <img
-            src="/ddl-logo.png"
-            alt="Daramola Digital Labs"
-            className="h-9 w-auto"
-            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
-          />
+          <div className="bg-white rounded-xl p-1.5 shadow-md">
+            <img
+              src="/ddl-logo.png"
+              alt="Daramola Digital Labs"
+              className="h-9 w-9 object-contain"
+              onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
+            />
+          </div>
           <div>
             <span className="text-white font-bold text-lg leading-none block">CareTalk UK</span>
-            <span className="text-blue-300 text-xs leading-none">by Daramola Digital Labs</span>
+            <span className="text-blue-200 text-xs leading-none">by Daramola Digital Labs</span>
           </div>
         </div>
         <button
@@ -69,12 +71,14 @@ export default function LandingPage({ onGetStarted }: Props) {
       {/* About DDL */}
       <div className="bg-white/5 px-6 py-8">
         <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-center gap-6">
-          <img
-            src="/ddl-logo.png"
-            alt="Daramola Digital Labs"
-            className="h-16 w-auto shrink-0"
-            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
-          />
+          <div className="bg-white rounded-2xl p-3 shadow-lg shrink-0">
+            <img
+              src="/ddl-logo.png"
+              alt="Daramola Digital Labs"
+              className="h-16 w-16 object-contain"
+              onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
+            />
+          </div>
           <div>
             <p className="text-white font-semibold mb-1">About Daramola Digital Labs</p>
             <p className="text-blue-200 text-sm leading-relaxed">
