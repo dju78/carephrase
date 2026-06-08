@@ -10,6 +10,7 @@ import EmergencyCallPractice from './pages/EmergencyCallPractice'
 import PrivacyBanner from './components/PrivacyBanner'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
+import InstallPrompt from './components/InstallPrompt'
 import type { Page } from './types'
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         {page === 'emergency'    && <EmergencyCallPractice />}
       </main>
       {page !== 'landing' && <Footer />}
+      <InstallPrompt />
     </div>
   )
 }
