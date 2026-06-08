@@ -610,10 +610,25 @@ function screenCoaching() {
 
   var card = el("div", { class: "card" }, [
     el("h3", {}, ["Pillar " + (pIdx + 1) + ": " + PILLAR_LABELS[pIdx]]),
-    el("p", { class: "muted", style: "margin:0 0 8px" }, ["Coaching prompt: " + hint]),
-    el("label", { for: "pillarAnswer" }, ["Your answer for this pillar"]),
-    ta
+    el("p", { class: "muted", style: "margin:0 0 8px" }, ["Coaching prompt: " + hint])
   ]);
+  if (pIdx === 3) {
+    var p4 = el("div", { class: "card-2", style: "border:1px solid var(--border);border-radius:8px;padding:10px 12px;margin-bottom:10px" }, [
+      el("p", { style: "margin:0 0 6px;font-weight:600" }, ["Guidance for this section"]),
+      el("p", { style: "margin:0 0 6px;font-size:14px" }, ["Write whether escalation or safeguarding action was needed and what you did. Include one or more of the following, proportionate to the situation:"]),
+      el("ul", { class: "hintlist" }, [
+        el("li", {}, ["Who you informed (senior carer, manager, GP, family, safeguarding lead)"]),
+        el("li", {}, ["What form or record you completed (incident form, body map, MAR chart, medication refusal form, seizure record, food and fluid chart)"]),
+        el("li", {}, ["Any referral made (district nurse, GP, speech and language therapist, safeguarding team)"]),
+        el("li", {}, ["Whether the care plan was reviewed or flagged for update"]),
+        el("li", {}, ["If no escalation was needed: a clear statement that the situation was resolved, monitored, and recorded, with no further action required"])
+      ]),
+      el("p", { style: "margin:8px 0 0;font-size:13px;color:var(--muted)" }, ["Aim for proportionate judgement — do not over-escalate routine situations, and do not under-escalate high-risk ones such as unexplained injury, sudden deterioration, disclosure of abuse, or a witnessed seizure."])
+    ]);
+    card.appendChild(p4);
+  }
+  card.appendChild(el("label", { for: "pillarAnswer" }, ["Your answer for this pillar"]));
+  card.appendChild(ta);
 
   var coachBtn = el("button", { class: "btn", onclick: function () {
     var v = ta.value.trim();
