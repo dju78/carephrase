@@ -614,16 +614,17 @@ function screenCoaching() {
   ]);
   if (pIdx === 3) {
     var p4 = el("div", { class: "card-2", style: "border:1px solid var(--border);border-radius:8px;padding:10px 12px;margin-bottom:10px" }, [
-      el("p", { style: "margin:0 0 6px;font-weight:600" }, ["Guidance for this section"]),
-      el("p", { style: "margin:0 0 6px;font-size:14px" }, ["Write whether escalation or safeguarding action was needed and what you did. Include one or more of the following, proportionate to the situation:"]),
+      el("p", { style: "margin:0 0 8px;font-weight:600" }, ["Was any escalation, reporting, or safeguarding action needed?"]),
+      el("p", { style: "margin:0 0 6px;font-size:14px" }, ["Write what you did after the immediate situation was resolved."]),
+      el("p", { style: "margin:0 0 4px;font-size:14px" }, ["Consider:"]),
       el("ul", { class: "hintlist" }, [
-        el("li", {}, ["Who you informed (senior carer, manager, GP, family, safeguarding lead)"]),
-        el("li", {}, ["What form or record you completed (incident form, body map, MAR chart, medication refusal form, seizure record, food and fluid chart)"]),
-        el("li", {}, ["Any referral made (district nurse, GP, speech and language therapist, safeguarding team)"]),
-        el("li", {}, ["Whether the care plan was reviewed or flagged for update"]),
-        el("li", {}, ["If no escalation was needed: a clear statement that the situation was resolved, monitored, and recorded, with no further action required"])
+        el("li", {}, ["Who did you inform? (senior carer, manager, GP, family, safeguarding lead)"]),
+        el("li", {}, ["What records or forms did you complete?"]),
+        el("li", {}, ["Was a referral made to any other professional or service?"]),
+        el("li", {}, ["Was the care plan reviewed or flagged for update?"]),
+        el("li", {}, ["If no further action was needed, state that clearly and explain why."])
       ]),
-      el("p", { style: "margin:8px 0 0;font-size:13px;color:var(--muted)" }, ["Aim for proportionate judgement — do not over-escalate routine situations, and do not under-escalate high-risk ones such as unexplained injury, sudden deterioration, disclosure of abuse, or a witnessed seizure."])
+      el("p", { style: "margin:8px 0 0;font-size:13px;color:var(--muted)" }, ["Write only what you actually did. Do not guess or add steps you did not take."])
     ]);
     card.appendChild(p4);
   }
