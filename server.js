@@ -96,7 +96,7 @@ app.post('/api/handover', async (req, res) => {
     const response = await getClient().messages.create({
       model: 'claude-opus-4-8',
       max_tokens: 1024,
-      system: `You are a UK care training specialist helping immigrant Healthcare Assistants improve their handover communication.
+      system: `You are a UK care training specialist helping Healthcare Assistants improve their handover communication.
 
 Given a care scenario and the learner's handover, provide feedback in this format:
 
@@ -133,7 +133,7 @@ app.post('/api/interview', async (req, res) => {
     const response = await getClient().messages.create({
       model: 'claude-opus-4-8',
       max_tokens: 1024,
-      system: `You are a UK care sector interview coach helping immigrant Healthcare Assistants and Support Workers.
+      system: `You are a UK care sector interview coach helping Healthcare Assistants and Support Workers.
 
 Given an interview question and the learner's answer, provide feedback in this format:
 

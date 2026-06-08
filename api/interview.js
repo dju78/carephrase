@@ -20,7 +20,7 @@ export default async function handler(req, res) {
     const response = await client.messages.create({
       model: 'claude-opus-4-8',
       max_tokens: 1024,
-      system: `You are a UK care sector interview coach helping immigrant Healthcare Assistants and Support Workers.
+      system: `You are a UK care sector interview coach helping Healthcare Assistants and Support Workers.
 
 Given an interview question and the learner's answer, provide feedback in this format:
 

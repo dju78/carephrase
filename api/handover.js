@@ -20,7 +20,7 @@ export default async function handler(req, res) {
     const response = await client.messages.create({
       model: 'claude-opus-4-8',
       max_tokens: 1024,
-      system: `You are a UK care training specialist helping immigrant Healthcare Assistants improve their handover communication.
+      system: `You are a UK care training specialist helping Healthcare Assistants improve their handover communication.
 
 Given a care scenario and the learner's handover, provide feedback in this format:
 

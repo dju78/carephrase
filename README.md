@@ -4,7 +4,7 @@
 
 > *Data · Innovation · Impact*
 
-CareTalk UK is a free, mobile-friendly web app that helps immigrant Healthcare Assistants, Support Workers, and Care Assistants in the UK improve their professional care communication skills.
+CareTalk UK is a free, mobile-friendly web app that helps Healthcare Assistants, Support Workers, and Care Assistants in the UK improve their professional care communication skills.
 
 🌐 **Live app:** https://caretalk-uk.vercel.app
 

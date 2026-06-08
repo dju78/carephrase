@@ -26,7 +26,7 @@ export default function Footer() {
             © 2026 Daramola Digital Labs. All rights reserved.
           </p>
           <p className="text-slate-600 text-xs">
-            CareTalk UK · For immigrant care workers in the UK · No personal data stored
+            CareTalk UK · For care workers in the UK · No personal data stored
           </p>
         </div>
       </div>
