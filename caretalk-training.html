@@ -384,7 +384,12 @@ navProgress.onclick = function () { state.screen = "progress"; render(); };
 navSupervisor.onclick = function () { state.screen = "supervisorPin"; render(); };
 
 /* ---------- AI call ---------- */
+// JSON output shape the widget can render (used by all pillars):
+var PILLAR_JSON_SHAPE = '{"scores":{"factual":0,"language":0,"completeness":0,"safeguarding":0},"feedback":"short feedback","strength":"one strength","improve":"one area to improve, saying what detail to add or clarify in plain English, NOT a rewritten sentence","question":"one reflective question"}';
+
 function buildPillarPrompt(scn, pillarIndex, answer) {
+  if (pillarIndex === 3) return buildPillar4Prompt(scn, answer);
+
   var pillarName = PILLAR_LABELS[pillarIndex];
   return [
     "You are a UK care-note training coach. You COACH the carer to write better CQC-aligned care notes. You must NEVER write or rewrite the note for them. Do not produce a finished sentence they can copy. Give guidance, identify missing details in plain English, and ask a reflective question.",
@@ -400,7 +405,38 @@ function buildPillarPrompt(scn, pillarIndex, answer) {
     "factual (clear, objective, specific facts), language (respectful, non-judgemental, suitable for a care record), completeness (key details for this pillar), safeguarding (correctly identified the level of concern; reward PROPORTIONATE judgement, do NOT reward unnecessary escalation; in routine cases a strong answer may correctly state no safeguarding concern was found but monitoring or reporting was completed).",
     "",
     "Return ONLY valid JSON, no markdown, in this exact shape:",
-    '{"scores":{"factual":0,"language":0,"completeness":0,"safeguarding":0},"feedback":"short feedback","strength":"one strength","improve":"one area to improve, saying what detail to add or clarify in plain English, NOT a rewritten sentence","question":"one reflective question"}'
+    PILLAR_JSON_SHAPE
+  ].join("\n");
+}
+
+// Pillar 4: whether escalation or safeguarding action was needed and what the carer did.
+function buildPillar4Prompt(scn, answer) {
+  return [
+    "You are a care-note writing coach on CareTalk UK, a UK social care training platform. You are reviewing the fourth section of a care note: whether escalation or safeguarding action was needed and what the carer did.",
+    "Your role is to coach the carer. You must never write or rewrite their note.",
+    "",
+    "Scenario: " + scn.title + " (" + scn.difficulty + ")",
+    "Context: " + scn.context,
+    "Brief: " + scn.brief,
+    "",
+    "The carer has already written three sections (what happened, how it happened, what they did). They are now writing section 4: whether escalation or safeguarding action was needed — including incident reporting, referrals, GP contact, safeguarding alerts, family notification, or a clear statement that no escalation was required and why.",
+    "The carer wrote: \"" + answer + "\"",
+    "",
+    "WHAT GOOD LOOKS LIKE FOR THIS SECTION (proportionate to the situation, one or more of):",
+    "- Who was informed (senior carer, manager, GP, family, safeguarding lead)",
+    "- What form or record was completed (incident form, body map, MAR chart, medication refusal form, seizure record, food and fluid chart)",
+    "- Whether a referral was made (district nurse, GP, speech and language therapist, safeguarding team)",
+    "- Whether the care plan was reviewed or flagged for update",
+    "- If no escalation was needed: a clear statement that the situation was resolved, monitored, and recorded, with no further action required",
+    "",
+    "IMPORTANT SAFEGUARDING RULE: Do not reward unnecessary escalation. Reward proportionate judgement. In a routine scenario, a correct answer may state that no safeguarding concern was identified but that the incident was recorded and monitored. In a high-risk scenario (unexplained injury, sudden deterioration, disclosure of abuse, witnessed seizure), a correct answer must include specific escalation steps.",
+    "",
+    "COACHING RULES: Do not rewrite the carer's sentences under any circumstances. If improvement is needed, describe in plain English what detail to add. Do not produce a finished note or completed section. Ask one reflective question that helps the carer think about whether their response was proportionate.",
+    "",
+    "Score this section across four dimensions, each 1-10: factual, language, completeness, safeguarding (whether the escalation decision was proportionate — neither under-escalating nor over-escalating for this type of incident).",
+    "",
+    "Return ONLY valid JSON, no markdown, no code fences, in this exact shape:",
+    PILLAR_JSON_SHAPE
   ].join("\n");
 }
 
