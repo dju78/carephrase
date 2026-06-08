@@ -95,6 +95,24 @@ export default function Dashboard({ onNavigate }: Props) {
         ))}
       </div>
 
+      <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-8">
+        <div className="flex items-start gap-3">
+          <span className="text-3xl shrink-0">🎓</span>
+          <div className="flex-1">
+            <h2 className="text-lg font-bold text-slate-800 mb-1">Care-note training</h2>
+            <p className="text-slate-600 text-sm leading-relaxed mb-4">
+              Practise writing better care notes through guided scenarios. Learn how to observe clearly, record factually, and escalate appropriately.
+            </p>
+            <a
+              href="/caretalk-training.html"
+              className="inline-flex items-center bg-blue-700 text-white font-semibold px-5 py-2.5 rounded-lg text-sm hover:bg-blue-800 transition-colors"
+            >
+              Start care-note training →
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div className="bg-slate-100 rounded-xl p-5">
         <p className="text-sm font-semibold text-slate-700 mb-1">Your Progress</p>
         <div className="flex items-center gap-3">
