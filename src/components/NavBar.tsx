@@ -7,7 +7,7 @@ interface Props {
 
 const navItems: { label: string; page: Page }[] = [
   { label: 'Dashboard', page: 'dashboard' },
-  { label: 'Care Notes', page: 'care-note' },
+  { label: 'Care Coach', page: 'care-note' },
   { label: 'Handover', page: 'handover' },
   { label: 'Vocabulary', page: 'vocabulary' },
   { label: 'Interview', page: 'interview' },

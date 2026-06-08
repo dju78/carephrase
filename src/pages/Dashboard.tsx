@@ -6,9 +6,9 @@ interface Props {
 
 const tools: { icon: string; title: string; description: string; page: Page; color: string }[] = [
   {
-    icon: '📝',
-    title: 'Care Note Rewriter',
-    description: 'Turn simple care notes into professional UK care documentation.',
+    icon: '🎓',
+    title: 'Care Note Training Coach',
+    description: 'Write your own care note and get coaching feedback — the app never writes it for you.',
     page: 'care-note',
     color: 'bg-blue-50 border-blue-200 hover:bg-blue-100',
   },
@@ -70,8 +70,8 @@ export default function Dashboard({ onNavigate }: Props) {
 
       <div className="bg-blue-700 rounded-2xl p-5 mb-8 text-white">
         <p className="text-sm font-medium text-blue-200 mb-1">Today's Practice</p>
-        <p className="text-lg font-semibold">Rewrite a care note professionally</p>
-        <p className="text-blue-200 text-sm mt-1">Improve your documentation skills in just 5 minutes.</p>
+        <p className="text-lg font-semibold">Get coaching on your own care note</p>
+        <p className="text-blue-200 text-sm mt-1">Write a note and receive coaching feedback in just 5 minutes.</p>
         <button
           onClick={() => onNavigate('care-note')}
           className="mt-4 bg-white text-blue-700 font-semibold px-5 py-2 rounded-lg text-sm hover:bg-blue-50 transition-colors"
