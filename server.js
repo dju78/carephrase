@@ -60,7 +60,7 @@ function extractJSON(text) {
   try { return JSON.parse(text.slice(start, end + 1)) } catch { return null }
 }
 
-app.post('/api/rewrite', async (req, res) => {
+app.post('/api/feedback', async (req, res) => {
   const { note } = req.body
   if (!note?.trim()) return res.status(400).json({ error: 'Note is required' })
   if (!API_KEY) return res.status(500).json({ error: 'API key not configured. Add your ANTHROPIC_API_KEY to the .env file.' })

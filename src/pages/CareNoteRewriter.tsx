@@ -55,7 +55,7 @@ export default function CareNoteRewriter() {
     setResult(null)
     setError('')
     try {
-      const res = await fetch('/api/rewrite', {
+      const res = await fetch('/api/feedback', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ note: input }),
