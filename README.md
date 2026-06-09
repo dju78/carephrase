@@ -1,10 +1,10 @@
-# CareTalk UK
+# CarePhrase
 
 **by Daramola Digital Labs**
 
 > *Data · Innovation · Impact*
 
-CareTalk UK is a free, mobile-friendly web app that helps Healthcare Assistants, Support Workers, and Care Assistants in the UK improve their professional care communication skills.
+CarePhrase is a free, mobile-friendly web app that helps Healthcare Assistants, Support Workers, and Care Assistants in the UK improve their professional care communication skills.
 
 🌐 **Live app:** https://caretalk-uk.vercel.app
 

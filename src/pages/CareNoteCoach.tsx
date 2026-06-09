@@ -75,7 +75,7 @@ export default function CareNoteCoach() {
       <h1 className="text-2xl font-bold text-slate-800 mb-2">🎓 Care Note Training Coach</h1>
 
       <div className="bg-blue-700 text-white rounded-xl p-4 mb-3">
-        <p className="font-semibold">CareTalk UK does not write the note for you. It trains you to write better notes.</p>
+        <p className="font-semibold">CarePhrase does not write the note for you. It trains you to write better notes.</p>
       </div>
       <p className="text-slate-500 mb-6">
         Write your own care note and receive coaching feedback on clarity, professionalism, completeness, and safeguarding awareness.
@@ -85,7 +85,7 @@ export default function CareNoteCoach() {
         <span className="text-amber-500 text-lg shrink-0">⚠️</span>
         <p className="text-amber-800 text-sm leading-relaxed">
           <span className="font-semibold">Training only: </span>
-          CareTalk UK supports learning and reflective practice. Staff must write their own care notes and follow employer policy, care plans, safeguarding procedures, and local reporting requirements.
+          CarePhrase supports learning and reflective practice. Staff must write their own care notes and follow employer policy, care plans, safeguarding procedures, and local reporting requirements.
         </p>
       </div>
 
@@ -177,7 +177,7 @@ export default function CareNoteCoach() {
 
           <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
             <p className="text-slate-600 text-sm">
-              This is coaching feedback to help you improve your own note. CareTalk UK does not produce a finished care note. Revise your note in your own words and follow your employer's policy and care plan.
+              This is coaching feedback to help you improve your own note. CarePhrase does not produce a finished care note. Revise your note in your own words and follow your employer's policy and care plan.
             </p>
           </div>
         </div>

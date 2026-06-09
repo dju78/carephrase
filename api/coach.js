@@ -1,7 +1,7 @@
 import Anthropic from '@anthropic-ai/sdk'
 import { COACH_GUARD } from '../lib/coachGuard.js'
 
-// Secure proxy for the standalone CareTalk UK training widget.
+// Secure proxy for the standalone CarePhrase training widget.
 // The API key lives only on the server (Vercel env var) — never in the browser.
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*')

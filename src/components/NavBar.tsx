@@ -32,7 +32,7 @@ export default function NavBar({ currentPage, onNavigate }: Props) {
             />
           </div>
           <div className="text-left">
-            <span className="text-white font-bold text-base leading-none block">CareTalk UK</span>
+            <span className="text-white font-bold text-base leading-none block">CarePhrase</span>
             <span className="text-blue-200 text-xs leading-none">by Daramola Digital Labs</span>
           </div>
         </button>

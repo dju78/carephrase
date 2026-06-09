@@ -11,8 +11,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'apple-touch-icon.png', 'ddl-logo.svg'],
       manifest: {
-        name: 'CareTalk UK — care-note training coach',
-        short_name: 'CareTalk UK',
+        name: 'CarePhrase — care-note training coach',
+        short_name: 'CarePhrase',
         description:
           'A care-note training coach for UK care workers. It does not write notes for you — it trains you to write better notes.',
         theme_color: '#1e40af',

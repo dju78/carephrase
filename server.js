@@ -159,5 +159,5 @@ Be warm, encouraging, and specific. Reference UK care values (dignity, safeguard
 })
 
 app.listen(PORT, () => {
-  console.log(`CareTalk UK API server running on http://localhost:${PORT}`)
+  console.log(`CarePhrase API server running on http://localhost:${PORT}`)
 })

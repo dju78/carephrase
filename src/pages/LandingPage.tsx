@@ -18,7 +18,7 @@ export default function LandingPage({ onGetStarted }: Props) {
             />
           </div>
           <div>
-            <span className="text-white font-bold text-lg leading-none block">CareTalk UK</span>
+            <span className="text-white font-bold text-lg leading-none block">CarePhrase</span>
             <span className="text-blue-200 text-xs leading-none">by Daramola Digital Labs</span>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function LandingPage({ onGetStarted }: Props) {
         </h1>
         <p className="text-blue-200 text-sm font-medium mb-4">A product of Daramola Digital Labs</p>
         <p className="text-blue-100 text-lg max-w-md mb-8">
-          CareTalk UK helps Healthcare Assistants, Support Workers, and Care Assistants communicate confidently in UK care settings.
+          CarePhrase helps Healthcare Assistants, Support Workers, and Care Assistants communicate confidently in UK care settings.
         </p>
         <button
           onClick={onGetStarted}
@@ -102,7 +102,7 @@ export default function LandingPage({ onGetStarted }: Props) {
       {/* Worked example */}
       <div className="bg-white/10 px-6 py-10">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-white text-xl font-bold mb-2 text-center">How CareTalk UK coaches</h2>
+          <h2 className="text-white text-xl font-bold mb-2 text-center">How CarePhrase coaches</h2>
           <p className="text-blue-200 text-sm text-center mb-6">
             It gives feedback — it does not write the note for you.
           </p>
@@ -111,7 +111,7 @@ export default function LandingPage({ onGetStarted }: Props) {
             <p className="text-white text-sm italic">"Mary refused food and was angry."</p>
           </div>
           <div className="bg-white/10 rounded-xl p-5 space-y-3">
-            <p className="text-blue-200 text-xs font-semibold uppercase tracking-wide mb-1">CareTalk UK coaches (it does not rewrite)</p>
+            <p className="text-blue-200 text-xs font-semibold uppercase tracking-wide mb-1">CarePhrase coaches (it does not rewrite)</p>
             {[
               { label: '✅ Did well', text: 'You recorded that there was a change worth following up.' },
               { label: '⚠️ Missing', text: 'Add the time, what food was offered, what the service user actually said or did, and who you informed.' },
@@ -125,7 +125,7 @@ export default function LandingPage({ onGetStarted }: Props) {
             ))}
           </div>
           <p className="text-blue-200 text-xs text-center mt-4">
-            The carer then improves their own note using this feedback. CareTalk UK never supplies a finished sentence to copy.
+            The carer then improves their own note using this feedback. CarePhrase never supplies a finished sentence to copy.
           </p>
         </div>
       </div>
@@ -135,7 +135,7 @@ export default function LandingPage({ onGetStarted }: Props) {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-white text-xl font-bold mb-4 text-center">For supervisors</h2>
           <p className="text-blue-100 text-sm leading-relaxed mb-4">
-            CareTalk UK includes a supervisor view that lets a senior carer or manager see completed practice sessions — carer name, date, scenario, difficulty and overall score — and highlights any session where safeguarding awareness scored low so it can be followed up. The supervisor view is reached from the training tool and is protected by a PIN.
+            CarePhrase includes a supervisor view that lets a senior carer or manager see completed practice sessions — carer name, date, scenario, difficulty and overall score — and highlights any session where safeguarding awareness scored low so it can be followed up. The supervisor view is reached from the training tool and is protected by a PIN.
           </p>
           {/* PIN warning callout */}
           <div className="border border-yellow-400/60 bg-yellow-400/10 rounded-xl px-5 py-4 flex items-start gap-3">
@@ -169,7 +169,7 @@ export default function LandingPage({ onGetStarted }: Props) {
 
       {/* Footer */}
       <footer className="bg-blue-900 text-blue-300 text-center text-xs py-6 px-4 space-y-2">
-        <p>© 2026 Daramola Digital Labs. All rights reserved. · CareTalk UK · Mock data only — no personal data stored</p>
+        <p>© 2026 Daramola Digital Labs. All rights reserved. · CarePhrase · Mock data only — no personal data stored</p>
         <p className="space-x-4">
           <a href="mailto:dju78@omoyelejd.co.uk" className="underline hover:text-white transition-colors">
             Contact us
@@ -184,7 +184,7 @@ export default function LandingPage({ onGetStarted }: Props) {
           </a>
         </p>
         <p className="text-blue-400 text-xs">
-          CareTalk UK is a training coach, not a care-note writer. It is not CQC-approved and does not replace employer policy or professional supervision.
+          CarePhrase is a training coach, not a care-note writer. It is not CQC-approved and does not replace employer policy or professional supervision.
         </p>
       </footer>
     </div>

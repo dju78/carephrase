@@ -51,7 +51,7 @@ export default function InstallPrompt() {
           <img src="/ddl-logo.png" alt="" className="h-8 w-8 object-contain" />
         </div>
         <div className="flex-1">
-          <p className="font-semibold text-sm">Install CareTalk UK</p>
+          <p className="font-semibold text-sm">Install CarePhrase</p>
           {deferred ? (
             <p className="text-blue-200 text-xs mt-0.5">Add it to your home screen to use it like an app, even offline.</p>
           ) : (

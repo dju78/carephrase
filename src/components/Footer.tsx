@@ -13,7 +13,7 @@ export default function Footer() {
               />
             </div>
             <div>
-              <p className="text-white font-semibold text-sm">CareTalk UK</p>
+              <p className="text-white font-semibold text-sm">CarePhrase</p>
               <p className="text-slate-400 text-xs">by Daramola Digital Labs</p>
             </div>
           </div>
@@ -26,7 +26,7 @@ export default function Footer() {
             © 2026 Daramola Digital Labs. All rights reserved.
           </p>
           <p className="text-slate-600 text-xs">
-            CareTalk UK · For care workers in the UK · No personal data stored
+            CarePhrase · For care workers in the UK · No personal data stored
           </p>
         </div>
       </div>
