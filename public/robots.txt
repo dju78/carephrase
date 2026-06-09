@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://caretalk.omoyelejd.co.uk/sitemap.xml
+Sitemap: https://carephrase.omoyelejd.co.uk/sitemap.xml
