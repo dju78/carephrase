@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessibility Statement – CarePhrase</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f5f7ff;
+      color: #1a1a2e;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    header {
+      background: #2d4eaa;
+      color: #fff;
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    header .logo { font-size: 1.4rem; font-weight: 700; letter-spacing: 0.02em; }
+    header .logo span { color: #a8c4ff; }
+
+    header a.back {
+      margin-left: auto;
+      color: #a8c4ff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      border: 1px solid #a8c4ff;
+      padding: 0.3rem 0.85rem;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    header a.back:hover { background: rgba(168,196,255,0.15); }
+
+    main { max-width: 760px; margin: 3rem auto; padding: 0 1.5rem 4rem; }
+
+    .tag {
+      display: inline-block;
+      background: #dde8ff;
+      color: #2d4eaa;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.25rem 0.65rem;
+      border-radius: 3px;
+      margin-bottom: 1rem;
+    }
+
+    h1 { font-size: 2rem; font-weight: 700; color: #1a1a2e; margin-bottom: 0.4rem; line-height: 1.2; }
+
+    .meta {
+      color: #5a6a8a;
+      font-size: 0.875rem;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #d0d8ee;
+    }
+
+    h2 { font-size: 1.15rem; font-weight: 700; color: #2d4eaa; margin: 2rem 0 0.6rem; }
+    p { margin-bottom: 1rem; color: #2c2c3e; }
+    ul { margin: 0.5rem 0 1rem 1.4rem; color: #2c2c3e; }
+    ul li { margin-bottom: 0.4rem; }
+
+    .highlight-box {
+      background: #eaf1ff;
+      border-left: 4px solid #2d4eaa;
+      padding: 1rem 1.25rem;
+      border-radius: 0 6px 6px 0;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+      color: #1a2a50;
+    }
+    .highlight-box strong { display: block; margin-bottom: 0.3rem; }
+
+    .contact-box {
+      background: #2d4eaa;
+      color: #fff;
+      border-radius: 10px;
+      padding: 1.5rem 2rem;
+      margin-top: 2.5rem;
+    }
+    .contact-box h2 { color: #a8c4ff; margin-top: 0; }
+    .contact-box p { color: #dde8ff; }
+    .contact-box a { color: #fff; font-weight: 600; }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.8rem;
+      color: #7a8aaa;
+      border-top: 1px solid #d0d8ee;
+      margin-top: 3rem;
+    }
+    footer a { color: #2d4eaa; text-decoration: none; margin: 0 0.4rem; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.5rem; }
+      main { margin: 1.5rem auto; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Care<span>Phrase</span></div>
+  <a class="back" href="index.html">Back to app</a>
+</header>
+
+<main>
+  <span class="tag">Accessibility</span>
+  <h1>Accessibility Statement</h1>
+  <p class="meta">Published by Daramola Digital Labs &nbsp;|&nbsp; Last reviewed: 8 June 2026</p>
+
+  <div class="highlight-box">
+    <strong>Our commitment</strong>
+    CarePhrase aims to be usable by everyone, including care workers who use assistive technology. We are working towards WCAG 2.1 AA.
+  </div>
+
+  <h2>What we have done</h2>
+  <ul>
+    <li>Semantic HTML headings and landmark regions so screen readers can navigate the content.</li>
+    <li>Labelled form fields and buttons with accessible names.</li>
+    <li>Keyboard-operable controls — you can use CarePhrase without a mouse.</li>
+    <li>A responsive, mobile-first layout that reflows on small screens and when text is enlarged.</li>
+    <li>A light and dark theme that respects your device setting.</li>
+    <li>Clear, plain-English wording suited to a training tool.</li>
+  </ul>
+
+  <h2>Known limitations</h2>
+  <p>CarePhrase is an evolving product and we have not yet completed a full WCAG 2.1 AA audit. Some areas may not yet fully meet the standard. We welcome reports so we can prioritise fixes.</p>
+
+  <h2>How to use assistive technology</h2>
+  <p>CarePhrase works with standard screen readers, browser zoom, and operating-system text-size and contrast settings. If you rely on these and something does not work as expected, please let us know.</p>
+
+  <h2>Installing CarePhrase on your phone</h2>
+  <p>CarePhrase can be added to your home screen and used like an app. On iPhone, use the Share button then "Add to Home Screen". On Android, use your browser's "Install app" option.</p>
+
+  <h2>Reporting an accessibility barrier</h2>
+  <p>If you find an accessibility barrier in CarePhrase, please contact us and we will do our best to put it right. Tell us the page, what you were trying to do, and the assistive technology you were using if relevant.</p>
+
+  <div class="contact-box">
+    <h2>Contact us</h2>
+    <p>Email: <a href="mailto:dju78@omoyelejd.co.uk">dju78@omoyelejd.co.uk</a></p>
+    <p>Website: <a href="https://daramolajo.co.uk" target="_blank" rel="noopener">daramolajo.co.uk</a></p>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 Daramola Digital Labs. All rights reserved.
+  &nbsp;
+  <a href="accessibility.html">Accessibility</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="index.html">Back to CarePhrase</a>
+</footer>
+
+</body>
+</html>

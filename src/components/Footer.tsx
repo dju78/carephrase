@@ -35,8 +35,10 @@ export default function Footer() {
           <p className="text-slate-500 text-xs">
             © 2026 Daramola Digital Labs. All rights reserved.
           </p>
-          <p className="text-slate-600 text-xs">
-            CarePhrase · For care workers in the UK · No personal data stored
+          <p className="text-slate-500 text-xs space-x-3">
+            <a href="/accessibility.html" className="underline hover:text-slate-300 transition-colors">Accessibility</a>
+            <a href="/privacy.html" className="underline hover:text-slate-300 transition-colors">Privacy</a>
+            <a href="mailto:dju78@omoyelejd.co.uk" className="underline hover:text-slate-300 transition-colors">Contact</a>
           </p>
         </div>
       </div>

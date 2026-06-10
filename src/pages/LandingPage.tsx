@@ -177,30 +177,12 @@ export default function LandingPage({ onGetStarted }: Props) {
         </div>
       </div>
 
-      {/* Privacy */}
-      <div id="privacy" className="bg-white/5 px-6 py-10 scroll-mt-16">
+      {/* Training disclaimer */}
+      <div className="bg-white/5 px-6 py-10">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-white text-xl font-bold mb-3">Privacy and training disclaimer</h2>
-          <p className="text-blue-100 text-sm leading-relaxed mb-3">
-            <strong className="text-white">Privacy:</strong> Do not enter real service-user names, NHS numbers, dates of birth, addresses, phone numbers or any confidential personal information. Use a fictional name or write "the service user". A privacy reminder is shown at the point of entry on every screen.
-          </p>
-          <p className="text-blue-100 text-sm leading-relaxed mb-3">
-            <strong className="text-white">Data:</strong> CarePhrase does not require or store confidential service-user data. Practice progress is held in your browser for your own use; if storage is unavailable it is kept only for the current session.
-          </p>
           <p className="text-blue-100 text-sm leading-relaxed">
-            <strong className="text-white">Training only:</strong> CarePhrase supports learning and reflective practice. It is not legally certified or CQC-approved and is not a replacement for employer policy, clinical judgement, safeguarding procedures or professional supervision. Staff must write their own care notes and follow employer policy, care plans, safeguarding procedures and local reporting requirements.
+            <strong className="text-white">Training only:</strong> CarePhrase supports learning and reflective practice. It is not legally certified or CQC-approved and is not a replacement for employer policy, clinical judgement, safeguarding procedures or professional supervision. Staff must write their own care notes and follow employer policy, care plans, safeguarding procedures and local reporting requirements. See our <a href="/privacy.html" className="underline hover:text-white">Privacy Notice</a>.
           </p>
-        </div>
-      </div>
-
-      {/* Accessibility */}
-      <div id="accessibility" className="bg-white/10 px-6 py-10 scroll-mt-16">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-white text-xl font-bold mb-3">Accessibility</h2>
-          <p className="text-blue-100 text-sm leading-relaxed">
-            CarePhrase aims to be usable by everyone, including care workers using assistive technology. The app uses semantic HTML headings and landmarks, labelled form fields and buttons, keyboard-operable controls, a responsive mobile-first layout, and a light and dark theme that respects your device setting. We are working towards WCAG 2.1 AA. If you find an accessibility barrier, please contact us at <a href="mailto:dju78@omoyelejd.co.uk" className="underline hover:text-white">dju78@omoyelejd.co.uk</a> and we will do our best to put it right.
-          </p>
-          <p className="text-blue-300 text-xs mt-3">This statement was last reviewed on 8 June 2026.</p>
         </div>
       </div>
 
@@ -224,11 +206,11 @@ export default function LandingPage({ onGetStarted }: Props) {
             Contact us
           </a>
           <span>·</span>
-          <a href="#accessibility" className="underline hover:text-white transition-colors">
+          <a href="/accessibility.html" className="underline hover:text-white transition-colors">
             Accessibility
           </a>
           <span>·</span>
-          <a href="#privacy" className="underline hover:text-white transition-colors">
+          <a href="/privacy.html" className="underline hover:text-white transition-colors">
             Privacy
           </a>
         </p>
