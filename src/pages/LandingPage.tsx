@@ -24,7 +24,7 @@ export default function LandingPage({ onGetStarted }: Props) {
             </div>
           </div>
           <a
-            href="/carephrase-training.html"
+            href="/care-note-training.html"
             className="bg-white text-blue-800 font-bold text-sm px-4 py-2 rounded-lg shadow hover:bg-blue-50 transition-colors whitespace-nowrap"
           >
             Start training →
@@ -46,7 +46,7 @@ export default function LandingPage({ onGetStarted }: Props) {
         </p>
         <div className="flex flex-col sm:flex-row items-center gap-3">
           <a
-            href="/carephrase-training.html"
+            href="/care-note-training.html"
             className="bg-white text-blue-800 font-bold px-8 py-4 rounded-xl text-lg shadow-lg hover:bg-blue-50 transition-colors"
           >
             Start care-note training →

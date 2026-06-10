@@ -49,8 +49,8 @@ Daramola Digital Labs builds practical, data-driven digital tools that support c
 
 ```bash
 # Clone the repo
-git clone https://github.com/dju78/-caretalk-uk.git
-cd -caretalk-uk
+git clone https://github.com/dju78/carephrase.git
+cd carephrase
 
 # Install dependencies
 npm install

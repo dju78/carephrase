@@ -8,7 +8,12 @@
   "redirects": [
     {
       "source": "/caretalk-training.html",
-      "destination": "/carephrase-training.html",
+      "destination": "/care-note-training.html",
+      "permanent": true
+    },
+    {
+      "source": "/carephrase-training.html",
+      "destination": "/care-note-training.html",
       "permanent": true
     }
   ]
