@@ -380,6 +380,24 @@ var app = document.getElementById("app");
 var navProgress = document.getElementById("navProgress");
 var navSupervisor = document.getElementById("navSupervisor");
 
+// Supervisor access is hidden behind a secret URL key. NOTE: this is a static
+// client-side app, so this is obscurity, not real security — the key is present
+// in the shipped code. It stops casual access; for true access control a backend
+// login is required. Reach the supervisor view with:
+//   ...carephrase-training.html?supervisor=9gBXIMYlt-bKuEtQ
+// (also accepts the key in the URL hash: #supervisor=9gBXIMYlt-bKuEtQ)
+var SUPERVISOR_KEY = "9gBXIMYlt-bKuEtQ";
+function supervisorUnlocked() {
+  try {
+    var qs = new URLSearchParams(window.location.search);
+    if (qs.get("supervisor") === SUPERVISOR_KEY) return true;
+    var hash = (window.location.hash || "").replace(/^#/, "");
+    var hp = new URLSearchParams(hash);
+    if (hp.get("supervisor") === SUPERVISOR_KEY) return true;
+  } catch (e) { /* ignore */ }
+  return false;
+}
+
 navProgress.onclick = function () { state.screen = "progress"; render(); };
 navSupervisor.onclick = function () { state.screen = "supervisorPin"; render(); };
 
@@ -547,7 +565,13 @@ function difficultyTag(d) { return el("span", { class: "tag tag-" + d }, [d]); }
 /* ---------- screens ---------- */
 function render() {
   navProgress.style.display = (state.name && state.screen !== "name") ? "" : "none";
-  navSupervisor.style.display = (state.name && state.screen !== "name") ? "" : "none";
+  // Supervisor button only appears when the secret URL key is present.
+  navSupervisor.style.display = (state.name && state.screen !== "name" && supervisorUnlocked()) ? "" : "none";
+  // Guard the supervisor screens: without the secret key they are unreachable,
+  // even if the screen is set directly.
+  if ((state.screen === "supervisorPin" || state.screen === "supervisor") && !supervisorUnlocked()) {
+    state.screen = state.name ? "library" : "name";
+  }
   clear(app);
   var fn = ({
     name: screenName, library: screenLibrary, coaching: screenCoaching,
