@@ -63,12 +63,14 @@ export default function LandingPage({ onGetStarted }: Props) {
 
       {/* Feature icons */}
       <div className="bg-white/10 py-10 px-6">
-        <div className="max-w-3xl mx-auto grid grid-cols-2 gap-4 sm:grid-cols-4">
+        <div className="max-w-3xl mx-auto grid grid-cols-2 gap-4 sm:grid-cols-3">
           {[
             { icon: '📝', label: 'Care Note Coach' },
             { icon: '🤝', label: 'Handover Practice' },
             { icon: '📚', label: 'UK Care Vocabulary' },
             { icon: '💼', label: 'Interview Practice' },
+            { icon: '🛡️', label: 'Safeguarding Language' },
+            { icon: '🚨', label: 'Emergency Call Practice' },
           ].map(({ icon, label }) => (
             <div key={label} className="text-center">
               <div className="text-3xl mb-2">{icon}</div>
