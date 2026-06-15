@@ -9,7 +9,7 @@ export default function LandingPage({ onGetStarted }: Props) {
 
   async function copyLink() {
     try {
-      await navigator.clipboard.writeText('https://www.carephrase.com')
+      await navigator.clipboard.writeText('https://carephrase.com')
       setCopied(true)
       setTimeout(() => setCopied(false), 2000)
     } catch { /* clipboard may be unavailable */ }
@@ -124,7 +124,7 @@ export default function LandingPage({ onGetStarted }: Props) {
             <div className="bg-white/10 rounded-xl p-5">
               <p className="text-white font-semibold mb-2">📱 iPhone &amp; iPad</p>
               <ol className="text-blue-100 text-sm space-y-2 list-decimal list-inside">
-                <li><strong className="text-white">Open www.carephrase.com in Safari.</strong> This step is important — adding to the home screen only works in Safari, not inside WhatsApp, Gmail, LinkedIn, Facebook or Instagram.</li>
+                <li><strong className="text-white">Open carephrase.com in Safari.</strong> This step is important — adding to the home screen only works in Safari, not inside WhatsApp, Gmail, LinkedIn, Facebook or Instagram.</li>
                 <li>Tap the <strong className="text-white">Share</strong> button (the square with an arrow ↑) at the bottom of Safari.</li>
                 <li>Choose <strong className="text-white">Add to Home Screen</strong>, then tap <strong className="text-white">Add</strong>.</li>
               </ol>
@@ -142,7 +142,7 @@ export default function LandingPage({ onGetStarted }: Props) {
             <div className="bg-white/10 rounded-xl p-5">
               <p className="text-white font-semibold mb-2">🤖 Android</p>
               <ol className="text-blue-100 text-sm space-y-2 list-decimal list-inside">
-                <li><strong className="text-white">Open www.carephrase.com in Chrome.</strong></li>
+                <li><strong className="text-white">Open carephrase.com in Chrome.</strong></li>
                 <li>Tap the <strong className="text-white">menu</strong> (three dots) in the top right, or look for the <strong className="text-white">Install</strong> banner.</li>
                 <li>Choose <strong className="text-white">Install app</strong> or <strong className="text-white">Add to Home screen</strong>.</li>
               </ol>

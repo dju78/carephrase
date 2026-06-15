@@ -102,7 +102,7 @@ export default function InstallPrompt() {
             <>
               <p className="text-blue-100 text-xs mt-1 leading-relaxed">
                 On iPhone or iPad, installing only works in <strong>Safari</strong>.
-                Open <strong>www.carephrase.com</strong> in Safari, then tap the
+                Open <strong>carephrase.com</strong> in Safari, then tap the
                 <strong> Share</strong> button and choose <strong>“Add to Home Screen.”</strong>
               </p>
               <button
