@@ -1,4 +1,4 @@
-# # CarePhrase – AI Care Documentation Coach
+# CarePhrase – AI Care Documentation Coach
 
 **by Daramola Digital Labs**
 
@@ -104,13 +104,19 @@ ANTHROPIC_API_KEY=your-anthropic-api-key
 
 Planned enhancements include:
 
-- AI-assisted care note coaching
-- Advanced safeguarding scenarios
-- Emergency communication training
-- Personalised learning dashboard
+## Roadmap
+
+Planned enhancements include:
+
+- Advanced AI care note coaching
+- Safeguarding communication scenarios
+- Emergency communication practice
+- Expanded UK care vocabulary
+- Interview preparation module
+- Personalised learner dashboard
 - Organisation reporting for care providers
 - Performance analytics
-- Mobile-first learning experience
+- Mobile-first learning improvements
 - Expanded UK care vocabulary and documentation exercises
 
 ## Licence
