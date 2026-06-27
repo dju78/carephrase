@@ -1,12 +1,14 @@
-# CarePhrase
+# # CarePhrase – AI Care Documentation Coach
 
 **by Daramola Digital Labs**
 
 > *Data · Innovation · Impact*
 
-CarePhrase is a free, mobile-friendly web app that helps Healthcare Assistants, Support Workers, and Care Assistants in the UK improve their professional care communication skills.
+CarePhrase is an AI-powered training platform that helps UK health and social care professionals improve care documentation, communication, safeguarding awareness, and workplace English through realistic practice scenarios and structured feedback.
 
-🌐 **Live app:** https://carephrase.com
+## 🌐 Live Demo
+
+**Application:** https://carephrase.com
 
 ---
 
@@ -97,6 +99,19 @@ ANTHROPIC_API_KEY=your-anthropic-api-key
 - API key is server-side only — never exposed to the browser
 
 ---
+
+## Roadmap
+
+Planned enhancements include:
+
+- AI-assisted care note coaching
+- Advanced safeguarding scenarios
+- Emergency communication training
+- Personalised learning dashboard
+- Organisation reporting for care providers
+- Performance analytics
+- Mobile-first learning experience
+- Expanded UK care vocabulary and documentation exercises
 
 ## Licence
 
