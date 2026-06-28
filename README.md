@@ -13,6 +13,8 @@
 
 ---
 
+> **CarePhrase homepage** – AI-powered training platform for improving care documentation, safeguarding communication, handovers, workplace English, and interview preparation.
+
 **by Daramola Digital Labs**
 
 > *Data · Innovation · Impact*
