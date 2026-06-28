@@ -21,9 +21,6 @@
 
 CarePhrase is an AI-powered training platform that helps UK health and social care professionals improve care documentation, communication, safeguarding awareness, and workplace English through realistic practice scenarios and structured feedback.
 
-## 🌐 Live Demo
-
-**Application:** https://carephrase.com
 
 ---
 
@@ -123,7 +120,6 @@ Planned enhancements include:
 - Advanced AI care note coaching
 - Safeguarding communication scenarios
 - Emergency communication practice
-- Expanded UK care vocabulary
 - Interview preparation module
 - Personalised learner dashboard
 - Organisation reporting for care providers
