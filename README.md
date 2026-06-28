@@ -1,5 +1,12 @@
 # CarePhrase – AI Care Documentation Coach
 
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite)
+![Claude](https://img.shields.io/badge/Claude-Opus_4-black)
+![License](https://img.shields.io/badge/License-Proprietary-blue)
+
+**🌐 Live Demo:** https://carephrase.com • **📖 Documentation:** README • **🏢 Website:** https://daramolajo.co.uk
 ![CarePhrase Homepage](public/carephrase-homepage.png)
 
 ---
@@ -104,9 +111,6 @@ ANTHROPIC_API_KEY=your-anthropic-api-key
 
 ---
 
-## Roadmap
-
-Planned enhancements include:
 
 ## Roadmap
 
