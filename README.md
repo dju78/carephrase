@@ -1,5 +1,9 @@
 # CarePhrase – AI Care Documentation Coach
 
+![CarePhrase Homepage](public/carephrase-homepage.png)
+
+---
+
 **by Daramola Digital Labs**
 
 > *Data · Innovation · Impact*
