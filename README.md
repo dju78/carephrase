@@ -4,9 +4,11 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)
 ![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite)
 ![Claude](https://img.shields.io/badge/Claude-Opus_4-black)
-![License](https://img.shields.io/badge/License-Proprietary-blue)
+![License](https://img.shields.io/badge/License-Proprietary-black)
 
-**🌐 Live Demo:** https://carephrase.com • **📖 Documentation:** README • **🏢 Website:** https://daramolajo.co.uk
+🌐 **Live Demo:** https://carephrase.com  
+🏢 **Portfolio:** https://daramolajo.co.uk
+
 ![CarePhrase Homepage](public/carephrase-homepage.png)
 
 ---
