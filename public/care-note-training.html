@@ -555,7 +555,7 @@ function callAI(prompt) {
   return fetch("/api/coach", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ prompt: prompt, model: "claude-sonnet-4-20250514", max_tokens: 1000 })
+    body: JSON.stringify({ prompt: prompt, model: "claude-sonnet-4-6", max_tokens: 1000 })
   }).then(function (r) {
     if (!r.ok) throw new Error("proxy_unavailable");
     return r.json();

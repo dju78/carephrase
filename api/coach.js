@@ -19,7 +19,7 @@ export default async function handler(req, res) {
   try {
     const client = new Anthropic({ apiKey })
     const response = await client.messages.create({
-      model: model || 'claude-sonnet-4-20250514',
+      model: model || 'claude-sonnet-4-6',
       max_tokens: max_tokens || 1000,
       system: COACH_GUARD,
       messages: [{ role: 'user', content: prompt }],
