@@ -722,7 +722,17 @@ function screenCoaching() {
   card.appendChild(coachBtn);
   app.appendChild(card);
 
-  if (fb) {
+  if (fb && fb.error) {
+    var errCard = el("div", { class: "card" }, [
+      el("h3", {}, ["Coaching unavailable"]),
+      el("div", { class: "feedback-block", style: "border-left-color:#c0392b" }, [
+        el("p", { style: "margin:0" }, ["We couldn't reach the coaching service, so your answer has not been assessed and no score has been recorded. Please try again in a moment."])
+      ]),
+      el("div", { style: "height:10px" }, []),
+      el("button", { class: "btn btn-block", onclick: function () { if (!state.loadingPillar) getCoaching(pIdx); } }, [ state.loadingPillar ? el("span", { class: "spinner" }, []) : null, state.loadingPillar ? " Coaching…" : "Retry coaching" ])
+    ]);
+    app.appendChild(errCard);
+  } else if (fb) {
     var fbCard = el("div", { class: "card" }, [ el("h3", {}, ["Coaching feedback"]) ]);
     DIM_KEYS.forEach(function (k) { fbCard.appendChild(bar(DIM_LABELS[k], fb.scores[k])); });
     if (fb.didWell !== undefined) {
@@ -760,13 +770,10 @@ function getCoaching(pIdx) {
     DIM_KEYS.forEach(function (k) { j.scores[k] = Math.max(1, Math.min(10, Math.round(Number(j.scores[k]) || 1))); });
     state.feedback[pIdx] = j;
   }).catch(function () {
-    state.feedback[pIdx] = {
-      scores: { factual: 5, language: 5, completeness: 5, safeguarding: 5 },
-      feedback: "Coaching is temporarily unavailable. Re-read the coaching prompt above and check your answer covers the key facts for this pillar.",
-      strength: "You attempted the pillar in your own words.",
-      improve: "Add any missing time, location, or specific observable detail relevant to this pillar.",
-      question: "Have you recorded only what you observed, without assumptions?"
-    };
+    // Do NOT fabricate scores here. A canned all-5s result is indistinguishable
+    // from a genuine assessment: it hides outages from staff and supervisors and
+    // pollutes saved progress data. Flag the failure so the UI shows it plainly.
+    state.feedback[pIdx] = { error: true };
   }).then(function () { state.loadingPillar = false; render(); });
 }
 
